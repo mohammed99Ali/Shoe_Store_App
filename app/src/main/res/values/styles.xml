@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="italian_text_style">
+        <item name="android:textSize">28sp</item>
+        <item name="android:fontFamily">@font/girassol</item>
+        <item name="android:textStyle">bold</item>
+        <item name="color">@color/black</item>
+    </style>
+
+    <style name="scrollview_normal">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:fillViewport">true</item>
+    </style>
+
+    <style name="next_button">
+        <item name="android:layout_width">@dimen/image_icon</item>
+        <item name="android:layout_height">@dimen/image_icon</item>
+        <item name="android:layout_marginStart">@dimen/normal</item>
+        <item name="android:layout_marginEnd">@dimen/normal</item>
+        <item name="android:layout_marginBottom">32dp</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:contentDescription">@string/next_button</item>
+    </style>
+
+    <style name="title">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">16dp</item>
+        <item name="android:textSize">48sp</item>
+        <item name="android:fontFamily">@font/girassol</item>
+        <item name="android:textStyle">bold</item>
+        <item name="color">@color/black</item>
+    </style>
+
+    <style name="long_text">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">@dimen/normal</item>
+        <item name="android:layout_marginTop">32dp</item>
+        <item name="android:layout_marginEnd">@dimen/normal</item>
+        <item name="android:layout_marginBottom">@dimen/normal</item>
+        <item name="android:fontFamily">@font/girassol</item>
+        <item name="android:textStyle">bold</item>
+        <item name="color">@color/black</item>
+        <item name="android:textSize">24sp</item>
+
+    </style>
+
+    <style name="constraint_normal">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="edittext_normal">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">@dimen/normal</item>
+        <item name="android:layout_marginTop">@dimen/normal</item>
+        <item name="android:layout_marginEnd">@dimen/normal</item>
+        <item name="android:ems">10</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:fontFamily">@font/girassol</item>
+        <item name="android:textStyle">bold</item>
+        <item name="color">@color/black</item>
+    </style>
+
+    <style name="italian_text_icon">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">@dimen/normal</item>
+        <item name="android:layout_marginTop">@dimen/normal</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:fontFamily">@font/girassol</item>
+        <item name="android:textStyle">bold</item>
+        <item name="color">@color/black</item>
+    </style>
+
+    <style name="icon">
+        <item name="android:layout_width">@dimen/image_normal</item>
+        <item name="android:layout_height">@dimen/image_normal</item>
+        <item name="android:layout_marginStart">@dimen/normal</item>
+    </style>
+
+    <style name="button_normal">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/normal</item>
+        <item name="android:layout_marginEnd">@dimen/normal</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:fontFamily">@font/girassol</item>
+        <item name="android:textStyle">bold</item>
+        <item name="color">@color/black</item>
+    </style>
+
+    <style name="large_image_style">
+        <item name="android:layout_width">@dimen/large_image</item>
+        <item name="android:layout_height">@dimen/large_image</item>
+        <item name="android:layout_marginTop">@dimen/normal</item>
+    </style>
+
+    <style name="next_button_style">
+        <item name="android:layout_width">@dimen/image_icon</item>
+        <item name="android:layout_height">@dimen/image_icon</item>
+        <item name="android:layout_marginStart">8dp</item>
+        <item name="android:layout_marginTop">0dp</item>
+        <item name="android:layout_marginEnd">@dimen/normal</item>
+        <item name="android:layout_marginBottom">32dp</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <style name="next_text_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">0dp</item>
+        <item name="android:layout_marginStart">@dimen/normal</item>
+        <item name="android:layout_marginBottom">32dp</item>
+        <item name="android:textSize">28sp</item>
+        <item name="android:fontFamily">@font/girassol</item>
+        <item name="android:textStyle">bold</item>
+        <item name="color">@color/black</item>
+    </style>
+
+    <style name="floating_button">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginEnd">@dimen/normal</item>
+        <item name="android:layout_marginBottom">@dimen/normal</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+    </style>
+
+    <style name="italian_order">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">24dp</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:fontFamily">@font/girassol</item>
+        <item name="android:textStyle">bold</item>
+        <item name="color">@color/black</item>
+    </style>
+
+    <style name="left_radio_button" parent="italian_text_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">@dimen/normal</item>
+        <item name="android:layout_marginTop">@dimen/normal</item>
+    </style>
+
+    <style name="right_radio_button" parent="italian_text_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">@dimen/normal</item>
+        <item name="android:layout_marginTop">@dimen/normal</item>
+        <item name="android:layout_marginEnd">@dimen/normal</item>
+    </style>
+
+    <style name="bottom_radio_button" parent="italian_text_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">@dimen/normal</item>
+    </style>
+
+    <style name="italian_preview">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">24dp</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:layout_marginTop">@dimen/normal</item>
+        <item name="android:fontFamily">@font/girassol</item>
+        <item name="android:textStyle">bold</item>
+        <item name="color">@color/black</item>
+    </style>
+
+    <style name="value">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">16dp</item>
+        <item name="android:textSize">28sp</item>
+        <item name="android:fontFamily">@font/girassol</item>
+        <item name="android:textStyle">bold</item>
+        <item name="color">@color/black</item>
+    </style>
+
+    <style name="choice_button">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">16dp</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:fontFamily">@font/girassol</item>
+        <item name="android:textStyle">bold</item>
+        <item name="color">@color/black</item>
+    </style>
+
+    <style name="radioGroup">
+        <item name="android:layout_margin">@dimen/normal</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+</resources>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="normal">16dp</dimen>
+    <dimen name="image_normal">48dp</dimen>
+    <dimen name="image_icon">36dp</dimen>
+    <dimen name="corner_button">8dp</dimen>
+    <dimen name="large_image">200dp</dimen>
+</resources>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@android:color/transparent"
+    tools:context=".Instruction">
+
+    <!-- here i used the linear layout because my design going in vertical way-->
+
+    <ScrollView
+        android:id="@+id/instruction_SV"
+        style="@style/scrollview_normal">
+
+        <LinearLayout
+            android:id="@+id/instruction_CL"
+            style="@style/constraint_normal"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/instruction_list_TV"
+                style="@style/long_text"
+                android:layout_width="wrap_content"
+                android:layout_marginBottom="@dimen/normal"
+                android:text="@string/instruction_list" />
+
+            <ImageButton
+                android:id="@+id/next_instruction_IB"
+                style="@style/next_button_style"
+                android:layout_gravity="end|bottom"
+                android:contentDescription="@string/next_button"
+                android:src="@drawable/next_arrow" />
+
+        </LinearLayout>
+    </ScrollView>
+</layout>

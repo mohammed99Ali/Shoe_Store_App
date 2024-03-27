@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <!-- here i used the linear layout because my design going in vertical way-->
+
+    <ScrollView
+        android:id="@+id/about_SV"
+        style="@style/scrollview_normal"
+        android:background="@android:color/transparent"
+        tools:context=".About">
+
+        <LinearLayout
+            android:id="@+id/about_CL"
+            style="@style/constraint_normal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/about_description"
+                style="@style/long_text"
+                android:layout_marginTop="16dp"
+                android:text="@string/the_app_description_1"
+                android:layout_width="wrap_content" />
+
+            <TextView
+                android:id="@+id/about_description_2"
+                style="@style/long_text"
+                android:text="@string/app_description_2"
+                android:layout_width="wrap_content" />
+
+            <TextView
+                android:id="@+id/about_description_3"
+                style="@style/long_text"
+                android:layout_marginBottom="0dp"
+                android:text="@string/app_description_3"
+                android:layout_width="wrap_content" />
+
+            <TextView
+                android:id="@+id/about_description_4"
+                style="@style/long_text"
+                android:text="@string/app_description_4"
+                android:layout_width="wrap_content" />
+        </LinearLayout>
+
+    </ScrollView>
+
+</layout>

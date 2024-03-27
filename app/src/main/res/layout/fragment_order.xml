@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@android:color/transparent"
+    tools:context=".orderPackage.Order">
+    <!-- here i used the constraint layout to be sure the design will stay organized in any phone and to handle the radio button problems -->
+
+    <data>
+
+        <variable
+            name="shared"
+            type="com.test_one.project_one.SharedViewModel" />
+
+    </data>
+
+        <ScrollView
+        android:id="@+id/order_SV"
+        style="@style/scrollview_normal">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/order_LL"
+            style="@style/constraint_normal">
+
+            <TextView
+                android:id="@+id/order_name_TV"
+                style="@style/italian_order"
+                android:layout_marginStart="16dp"
+                android:text="@string/order_name"
+                app:layout_constraintBottom_toBottomOf="@+id/order_name_EV"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/order_name_EV" />
+
+            <EditText
+                android:id="@+id/order_name_EV"
+                style="@style/edittext_normal"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:hint="@string/enter_order_name"
+                android:inputType="text"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/order_name_TV"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/gender_TV"
+                style="@style/italian_order"
+                android:text="@string/gender"
+                app:layout_constraintBottom_toBottomOf="@+id/gender_GB"
+                app:layout_constraintHorizontal_chainStyle="packed"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/gender_GB" />
+
+            <RadioGroup
+                android:id="@+id/gender_GB"
+                style="@style/radioGroup"
+                android:orientation="vertical"
+                android:checkedButton="@{shared.genderGB}"
+                app:layout_constraintStart_toEndOf="@id/gender_TV"
+                app:layout_constraintTop_toBottomOf="@+id/order_name_EV">
+
+                <RadioButton
+                    android:id="@+id/male_RB"
+                    style="@style/left_radio_button"
+                    android:layout_marginBottom="@dimen/normal"
+                     android:text="@string/male" />
+
+                <RadioButton
+                    android:id="@+id/female_RB"
+                    style="@style/right_radio_button"
+                    android:layout_marginTop="16dp"
+                     android:text="@string/female" />
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/brand_TV"
+                style="@style/italian_order"
+                android:text="@string/brand"
+                app:layout_constraintBottom_toBottomOf="@+id/brand_GB"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/brand_GB" />
+
+            <RadioGroup
+                android:id="@+id/brand_GB"
+                style="@style/radioGroup"
+                android:checkedButton="@{shared.brandGB}"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="@+id/gender_GB"
+                app:layout_constraintStart_toStartOf="@+id/gender_GB"
+                app:layout_constraintTop_toBottomOf="@+id/gender_GB">
+
+                <RadioButton
+                    android:id="@+id/gucci_RB"
+                    style="@style/bottom_radio_button"
+                    android:text="@string/gucci" />
+
+                <RadioButton
+                    android:id="@+id/prada_RB"
+                    style="@style/bottom_radio_button"
+                    android:text="@string/prada" />
+
+                <RadioButton
+                    android:id="@+id/tods_RB"
+                    style="@style/bottom_radio_button"
+                    android:text="@string/tod_s" />
+
+                <RadioButton
+                    android:id="@+id/santoni_RB"
+                    style="@style/bottom_radio_button"
+                    android:text="@string/santoni" />
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/type_TV"
+                style="@style/italian_order"
+                android:text="@string/type"
+                app:layout_constraintBottom_toBottomOf="@+id/type_GB"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/type_GB" />
+
+            <RadioGroup
+                android:id="@+id/type_GB"
+                style="@style/radioGroup"
+                android:checkedButton="@{shared.typeGB}"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="@+id/brand_GB"
+                app:layout_constraintStart_toStartOf="@+id/brand_GB"
+                app:layout_constraintTop_toBottomOf="@+id/brand_GB">
+
+                <RadioButton
+                    android:id="@+id/sports_RB"
+                    style="@style/bottom_radio_button"
+                    android:text="@string/sports"
+                    app:layout_constraintHorizontal_chainStyle="spread"
+                    app:layout_constraintStart_toStartOf="@+id/tods_RB"
+                    app:layout_constraintTop_toBottomOf="@+id/tods_RB" />
+
+                <RadioButton
+                    android:id="@+id/work_RB"
+                    style="@style/bottom_radio_button"
+                    android:text="@string/work"
+                    app:layout_constraintStart_toStartOf="@+id/santoni_RB"
+                    app:layout_constraintTop_toBottomOf="@+id/santoni_RB" />
+
+                <RadioButton
+                    android:id="@+id/casual_RB"
+                    style="@style/bottom_radio_button"
+                    android:text="@string/casual"
+                    app:layout_constraintStart_toStartOf="@+id/sports_RB"
+                    app:layout_constraintTop_toBottomOf="@+id/sports_RB" />
+
+                <RadioButton
+                    android:id="@+id/formal_RB"
+                    style="@style/bottom_radio_button"
+                    android:text="@string/formal"
+                    app:layout_constraintStart_toStartOf="@+id/work_RB"
+                    app:layout_constraintTop_toBottomOf="@+id/work_RB" />
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/material_TV"
+                style="@style/italian_order"
+                android:text="@string/made"
+                app:layout_constraintBottom_toBottomOf="@+id/made_GB"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/made_GB" />
+
+            <RadioGroup
+                android:id="@+id/made_GB"
+                style="@style/radioGroup"
+                android:orientation="vertical"
+                android:checkedButton="@{shared.madeGB}"
+                app:layout_constraintEnd_toEndOf="@+id/type_GB"
+                app:layout_constraintStart_toStartOf="@+id/type_GB"
+                app:layout_constraintTop_toBottomOf="@+id/type_GB">
+
+                <RadioButton
+                    android:id="@+id/leather_RB"
+                    style="@style/bottom_radio_button"
+                    android:text="@string/leather" />
+
+                <RadioButton
+                    android:id="@+id/rubber_RB"
+                    style="@style/bottom_radio_button"
+                    android:text="@string/rubber" />
+
+                <RadioButton
+                    android:id="@+id/foam_RB"
+                    style="@style/bottom_radio_button"
+                    android:text="@string/foam" />
+
+                <RadioButton
+                    android:id="@+id/plastic_RB"
+                    style="@style/bottom_radio_button"
+                    android:text="@string/plastic" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/size_TV"
+                style="@style/italian_order"
+                android:text="@string/size"
+                app:layout_constraintBottom_toBottomOf="@+id/shoeSize_EV"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/shoeSize_EV" />
+
+            <EditText
+                android:id="@+id/shoeSize_EV"
+                style="@style/edittext_normal"
+                android:layout_marginStart="32dp"
+                android:hint="@string/enter_shoe_size"
+                android:inputType="number|numberDecimal|numberSigned"
+                app:layout_constraintStart_toEndOf="@+id/size_TV"
+                app:layout_constraintTop_toBottomOf="@+id/made_GB" />
+
+            <TextView
+                android:id="@+id/color_TV"
+                style="@style/italian_order"
+                android:text="@string/color"
+                app:layout_constraintBottom_toBottomOf="@+id/color_EV"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/color_EV" />
+
+            <EditText
+                android:id="@+id/color_EV"
+                style="@style/edittext_normal"
+                android:layout_marginStart="0dp"
+                android:layout_marginEnd="0dp"
+                android:hint="@string/enter_shoe_color"
+                android:inputType="text"
+                app:layout_constraintEnd_toEndOf="@+id/shoeSize_EV"
+                app:layout_constraintStart_toStartOf="@+id/shoeSize_EV"
+                app:layout_constraintTop_toBottomOf="@+id/shoeSize_EV" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                style="@style/large_image_style"
+                android:contentDescription="@string/grass_shoe_description"
+                android:src="@drawable/shoe_item"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/color_EV" />
+
+            <ImageButton
+                android:id="@+id/next_order_IB"
+                style="@style/next_button_style"
+                android:contentDescription="@string/next_button"
+                android:src="@drawable/next_arrow"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</layout>

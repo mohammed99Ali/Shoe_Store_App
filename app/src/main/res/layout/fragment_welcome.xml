@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@android:color/transparent"
+    tools:context=".Welcome">
+    <!-- here i used the constraint because the design is not 100% vertical-->
+
+    <ScrollView
+        android:id="@+id/welcome_SV"
+        style="@style/scrollview_normal">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/welcome_CL"
+            style="@style/constraint_normal">
+
+            <ImageView
+                android:id="@+id/one_hundred_IV"
+                style="@style/large_image_style"
+                android:layout_marginTop="@dimen/normal"
+                android:layout_marginEnd="@dimen/normal"
+                android:layout_marginBottom="32dp"
+                android:contentDescription="@string/one_hundred_description"
+                android:src="@drawable/_100_icon"
+                app:layout_constraintBottom_toTopOf="@+id/welcome_TV"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/welcome_TV"
+                style="@style/italian_text_icon"
+                android:text="@string/welcome"
+                android:textSize="88sp"
+                app:layout_constraintBottom_toTopOf="@+id/slogan_TV"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_chainStyle="packed" />
+
+            <TextView
+                android:id="@+id/slogan_TV"
+                style="@style/italian_text_icon"
+                android:text="@string/slogan_S"
+                android:textAlignment="center"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/welcome_TV" />
+
+            <ImageView
+                android:id="@+id/grass_shoe_IV"
+                style="@style/large_image_style"
+                android:contentDescription="@string/grass_shoe_description"
+                android:src="@drawable/shoe_item"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <ImageButton
+                android:id="@+id/next_welcome_IB"
+                style="@style/next_button_style"
+                android:src="@drawable/next_arrow"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:contentDescription="@string/next_button" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</layout>

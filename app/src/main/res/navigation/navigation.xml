@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/login_fragment">
+
+    <fragment
+        android:id="@+id/login_fragment"
+        android:name="com.test_one.project_one.Login"
+        android:label="@string/Login"
+        tools:layout="@layout/fragment_login">
+        <action
+            android:id="@+id/action_login_to_welcome"
+            app:destination="@id/welcome"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out" />
+    </fragment>
+    <fragment
+        android:id="@+id/welcome"
+        android:name="com.test_one.project_one.Welcome"
+        android:label="@string/welcome"
+        tools:layout="@layout/fragment_welcome">
+        <action
+            android:id="@+id/action_welcome_to_instruction"
+            app:destination="@id/instruction"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out"
+            app:popUpTo="@id/welcome" />
+    </fragment>
+    <fragment
+        android:id="@+id/instruction"
+        android:name="com.test_one.project_one.Instruction"
+        android:label="@string/instructions"
+        tools:layout="@layout/fragment_instruction">
+        <action
+            android:id="@+id/action_instruction_to_orderList"
+            app:destination="@id/orderList"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out"
+            app:popUpTo="@id/instruction" />
+    </fragment>
+    <fragment
+        android:id="@+id/orderList"
+        android:name="com.test_one.project_one.orderListPackage.OrderList"
+        android:label="@string/order_list"
+        tools:layout="@layout/fragment_order_list">
+        <action
+            android:id="@+id/action_orderList_to_order"
+            app:destination="@id/order"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out"
+            app:popUpTo="@id/orderList" />
+        <action
+            android:id="@+id/action_orderList_to_preview"
+            app:destination="@id/preview"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out">
+
+            <argument
+                android:name="newButtonName"
+                android:defaultValue="edit" />
+
+        </action>
+
+        <argument
+            android:name="isSaved"
+            app:argType="boolean"
+            android:defaultValue="false" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/order"
+        android:name="com.test_one.project_one.orderPackage.Order"
+        android:label="order"
+        tools:layout="@layout/fragment_order">
+        <action
+            android:id="@+id/action_order_to_preview"
+            app:destination="@id/preview"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out"
+            app:popUpTo="@id/orderList" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/preview"
+        android:name="com.test_one.project_one.orderPackage.Preview"
+        android:label="@string/preview"
+        tools:layout="@layout/fragment_preview">
+        <action
+            android:id="@+id/action_preview_to_order"
+            app:destination="@id/order"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out"
+            app:popUpTo="@id/order" />
+        <action
+            android:id="@+id/action_preview_to_login_fragment"
+            app:destination="@id/login_fragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out" />
+        <action
+            android:id="@+id/action_preview_to_orderList"
+            app:destination="@id/orderList"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out" />
+        <argument
+            android:name="newButtonName"
+            app:argType="string" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/about"
+        android:name="com.test_one.project_one.About"
+        android:label="@string/about" />
+</navigation>

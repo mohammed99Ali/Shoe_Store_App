@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@android:color/transparent"
+    tools:context=".orderPackage.Preview">
+    <!-- here i used the constraint layout because the design is not vertical or horizontal-->
+
+    <data>
+        <variable
+            name="shared"
+            type="com.test_one.project_one.SharedViewModel" />
+
+    </data>
+
+    <ScrollView
+        android:id="@+id/preview_SV"
+        style="@style/scrollview_normal">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/preview_CL"
+            style="@style/constraint_normal">
+
+            <TextView
+                android:id="@+id/preview_TV"
+                style="@style/title"
+                android:text="@string/preview"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/order_name_preview_TV"
+                style="@style/italian_preview"
+                android:text="@string/order_name"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/preview_TV" />
+
+            <TextView
+                android:id="@+id/gender_preview_TV"
+                style="@style/italian_order"
+                android:layout_marginTop="@dimen/normal"
+                android:text="@string/gender"
+                app:layout_constraintHorizontal_chainStyle="packed"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/order_name_preview_TV" />
+
+            <TextView
+                android:id="@+id/brand_preview_TV"
+                style="@style/italian_preview"
+                android:text="@string/brand"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/gender_preview_TV" />
+
+            <TextView
+                android:id="@+id/type_preview_TV"
+                style="@style/italian_preview"
+                android:text="@string/type"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/brand_preview_TV" />
+
+            <TextView
+                android:id="@+id/material_preview_TV"
+                style="@style/italian_preview"
+                android:text="@string/material"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/type_preview_TV" />
+
+            <TextView
+                android:id="@+id/size_preview_TV"
+                style="@style/italian_preview"
+                android:text="@string/size"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/material_preview_TV" />
+
+            <TextView
+                android:id="@+id/color_preview_TV"
+                style="@style/italian_preview"
+                android:text="@string/color"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/size_preview_TV" />
+
+            <TextView
+                android:id="@+id/order_name_value_TV"
+                app:layout_constraintBottom_toBottomOf="@+id/order_name_preview_TV"
+                app:layout_constraintStart_toEndOf="@+id/order_name_preview_TV"
+                app:layout_constraintTop_toTopOf="@+id/order_name_preview_TV"
+                android:text="@{shared.name}"
+                style="@style/value" />
+
+
+            <TextView
+                android:id="@+id/gender_value_TV"
+                app:layout_constraintBottom_toBottomOf="@+id/gender_preview_TV"
+                app:layout_constraintStart_toEndOf="@+id/gender_preview_TV"
+                app:layout_constraintTop_toTopOf="@+id/gender_preview_TV"
+                android:text="@{shared.gender}"
+                style="@style/value" />
+
+            <TextView
+                android:id="@+id/brand_value_TV"
+                style="@style/value"
+                app:layout_constraintBottom_toBottomOf="@+id/brand_preview_TV"
+                app:layout_constraintStart_toEndOf="@+id/brand_preview_TV"
+                app:layout_constraintTop_toTopOf="@+id/brand_preview_TV"
+                android:text="@{shared.brand}"/>
+
+            <TextView
+                android:id="@+id/type_value_TV"
+                style="@style/value"
+                app:layout_constraintBottom_toBottomOf="@+id/type_preview_TV"
+                app:layout_constraintStart_toEndOf="@+id/type_preview_TV"
+                app:layout_constraintTop_toTopOf="@+id/type_preview_TV"
+                android:text="@{shared.type}"/>
+
+            <TextView
+                android:id="@+id/material_value_TV"
+                style="@style/value"
+                app:layout_constraintBottom_toBottomOf="@+id/material_preview_TV"
+                app:layout_constraintStart_toEndOf="@+id/material_preview_TV"
+                app:layout_constraintTop_toTopOf="@+id/material_preview_TV"
+                android:text="@{shared.made}"/>
+
+            <TextView
+                android:id="@+id/size_value_TV"
+                style="@style/value"
+                app:layout_constraintBottom_toBottomOf="@+id/size_preview_TV"
+                app:layout_constraintStart_toEndOf="@+id/size_preview_TV"
+                app:layout_constraintTop_toTopOf="@+id/size_preview_TV"
+                android:text="@{shared.size}"/>
+
+            <TextView
+                android:id="@+id/color_value_TV"
+                style="@style/value"
+                android:text="@{shared.color}"
+                app:layout_constraintBottom_toBottomOf="@+id/color_preview_TV"
+                app:layout_constraintStart_toEndOf="@+id/color_preview_TV"
+                app:layout_constraintTop_toTopOf="@+id/color_preview_TV"
+              />
+
+            <Button
+                android:id="@+id/cancel_B"
+                style="@style/choice_button"
+                android:layout_marginStart="16dp"
+                android:text=""
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/share_B"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/share_B" />
+
+            <Button
+                android:id="@+id/share_B"
+                style="@style/choice_button"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="8dp"
+                android:text="@string/share"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/save_B"
+                app:layout_constraintStart_toEndOf="@+id/cancel_B"
+                app:layout_constraintTop_toBottomOf="@+id/color_preview_TV"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <Button
+                android:id="@+id/save_B"
+               style="@style/choice_button"
+                android:layout_marginEnd="16dp"
+                android:text="@string/save"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/share_B"
+                app:layout_constraintTop_toTopOf="@+id/share_B" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</layout>
