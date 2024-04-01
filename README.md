@@ -1,11 +1,11 @@
-### [Negozio Shoe Store App] - Final Project for Developing Android Apps with Kotlin - Part 1
+# [Negozio Shoe Store App] - Final Project for Developing Android Apps with Kotlin - Part 1
 
 This is the final project for the "Developing Android Apps with Kotlin - Part 1" course offered by [Android Kotlin Developer](https://www.udacity.com/course/android-kotlin-developer-nanodegree--nd940) from [Udacity](https://www.udacity.com/). It demonstrates the use of Kotlin for building an Android application.
 
 This is my first Android app using Kotlin. Italian Shoes Store App!! So, it is a simple app to order a shoe with specific customization. It has 7 fragments starting from the Welcome Screen ending with either saving your design or share it with a dealer or a friend. The App's Idea was suggested by the course team to use me experience from using the linear Layout. I built it with multi-screen application method among a lot of wonderful methodologies to build the app.
 
 ## Tour in the app ✨ 
-# Get Started 
+### Get Started 
 > [!NOTE]
 > The functionality for the sign-up and login isn’t implemented correctly
 
@@ -13,7 +13,7 @@ In your first tour in the app, you will see the login screen asking you for the 
 
 After you entered the required info’s, you won’t see the order area yet, you must walk through the welcome & instruction screens. The instruction screen is a simple screen to guide you how to deal with the app correctly. 
 
-# Order And Customization 
+### Order And Customization 
 
 Now you will start your ordering trip. After clicking the “new order button” in the bottom right corner of the order list screen the order screen will show up. Now you can customize your shoe…first you must enter Your name, Gender and the size of the shoe. Among selecting the Brand, Type, Material and color (you can enter any color you have).
 
@@ -21,7 +21,7 @@ Then you’ll preview the order. If you want to change something you can click c
 
 Now here is the triggering area. For this app to be real app and can be a useful app. You can share it with shop that can provide you with your custom shoe. Maybe its not useful and a great way to order a shoe. And I ‘ll agree with you, because the idea of the app is not to build a real app for a shop shoe. The idea of the app is to give the project reviewer a look of what my experience in design will build. 
 
-# Sharing an Order 
+### Sharing an Order 
 
 when finally saved an order or you still in the review area you can click share button. That will give you the access to view your order on some social media platform. You may send it via WhatsApp or email.
 
@@ -33,7 +33,7 @@ So, as I said this is not a real app but I will write some features that I belie
 - Simple app: the language of the app is set to be clear for the user to understand, you can understand the app from reading the instruction only.
 - Side menu: away for you to access the login page, about page and instruction page from the side menu.
 - simple design: you can order and share your order within five minutes (if you had a clue for what shoe you are searching for), able to send the order via modern social media apps.
-# Technologies I Used in my project
+### Technologies I Used in my project
 -	ViewModel and LiveData lifecycle
 -	Single Activity architecture
 -	ViewGroups and Views
@@ -41,7 +41,7 @@ So, as I said this is not a real app but I will write some features that I belie
 -	multi-screened Android Application
 -	ScrollView 
 -	Navigation using KTX 
-# The core Android development concepts I used in My project
+### The core Android development concepts I used in My project
 •	Activities 
 -	Main Activity: the main Activity that holds the app logic within the single Activity method
 
@@ -61,7 +61,7 @@ So, as I said this is not a real app but I will write some features that I belie
 
 •	Data Handling: The app doesn’t contain any database. But it can handle the shutdown process. 
 
-# The Main Libraries and Dependencies
+### The Main Libraries and Dependencies
 -	Androidx : databinding, navigation(KTX), lifecycle, appcompat
 ## THE SHOE SHOP APP 📱
 >[!NOTE]
