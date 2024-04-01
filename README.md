@@ -26,9 +26,37 @@ when finally saved an order or you still in the review area you can click share 
 ## Features 📝
 
 *So, as I said this is not a real app but I will write some features that I believe it can be at least a feature 
--Simple app: the language of the app is set to be clear for the user to understand, you can understand the app from reading the instruction only.
--Side menu: away for you to access the login page, about page and instruction page from the side menu.
--simple design: you can order and share your order within five minutes (if you had a clue for what shoe you are searching for), able to send the order via modern social media apps.
+- Simple app: the language of the app is set to be clear for the user to understand, you can understand the app from reading the instruction only.
+- Side menu: away for you to access the login page, about page and instruction page from the side menu.
+- simple design: you can order and share your order within five minutes (if you had a clue for what shoe you are searching for), able to send the order via modern social media apps.
+# Technologies I Used in my project
+-	ViewModel and LiveData lifecycle
+-	Single Activity architecture
+-	ViewGroups and Views
+-	Databinding 
+-	multi-screened Android Application
+-	ScrollView 
+-	Navigation using KTX 
+# The core Android development concepts I used in My project
+•	Activities 
+-	Main Activity: the main Activity that holds the app logic within the single Activity method
+
+•	Fragments 
+-	Login: first fragment and the one how responsible for holding the login function (not working as it should)
+-	Instruction: responsible for guide the user through the app
+-	About: responsible for displays information about your app
+-	Welcome: just saying welcome 
+-	Order lest: responsible for holding the orders, you can share & edit existing order from here
+-	Order: customize your order here
+-	Preview: edit, share and save an order
+
+•	UI Elements:
+-	TextViews and Image Views to show the app
+-	Buttons, ImageButtons and ScrollView to control the app
+-	EditTexts and RadioGroups to take input 
+
+•	Data Handling: The app doesn’t contain any database. But it can handle the shutdown process. 
+
 # Technologies I Used in my project
 -	ViewModel and LiveData lifecycle
 -	Single Activity architecture
