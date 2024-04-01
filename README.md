@@ -67,6 +67,11 @@ So, as I said this is not a real app but I will write some features that I belie
 >[!NOTE]
 >The Screenshots of the app will be added soon.
 
+## Tasks
+ -  [ ] Add the install/ build code info. 
+ -	[ ] Add the screenshots for the app.
+ - 	[ ] Edit the contribute section.
+
 
 ## Contribution
 This repo doesn’t have future purposes. But I’ll continue developing it just for learning purposes. So, if you want to contribute anything you find useful, Thank you in advance. 
