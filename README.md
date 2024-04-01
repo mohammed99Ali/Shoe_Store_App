@@ -7,7 +7,7 @@ This is my first Android app using Kotlin. Italian Shoes Store App!! So, it is a
 ## Tour in the app ✨ 
 ### Get Started 
 > [!NOTE]
-> The functionality for the sign-up and login isn’t implemented correctly
+> The functionality for the sign-up and login isn’t implemented correctly.
 
 In your first tour in the app, you will see the login screen asking you for the user information. Note that the functionality for the sign-up and login isn’t implemented correctly, because of the learning journey the course team asked us to focus on the designing (among the main functionalities for the app to work correctly). 
 
@@ -25,11 +25,11 @@ Now here is the triggering area. For this app to be real app and can be a useful
 
 when finally saved an order or you still in the review area you can click share button. That will give you the access to view your order on some social media platform. You may send it via WhatsApp or email.
 
-The order will be sent in text form heading with the username that you choose in the login screen. Then your shoe customization came next. Finally, as a beauty touch the text will end with the store slogan “You are not buying an object, you are buying a style”
+The order will be sent in text form heading with the username that you choose in the login screen. Then your shoe customization came next. Finally, as a beauty touch the text will end with the store slogan “You are not buying an object, you are buying a style”.
 
 ## Features 📝
 >[!NOTE]
-So, as I said this is not a real app but I will write some features that I believe it can be at least a feature 
+So, as I said this is not a real app but I will write some features that I believe it can be at least a feature. 
 - Simple app: the language of the app is set to be clear for the user to understand, you can understand the app from reading the instruction only.
 - Side menu: away for you to access the login page, about page and instruction page from the side menu.
 - simple design: you can order and share your order within five minutes (if you had a clue for what shoe you are searching for), able to send the order via modern social media apps.
@@ -42,10 +42,10 @@ So, as I said this is not a real app but I will write some features that I belie
 -	ScrollView 
 -	Navigation using KTX 
 ### The core Android development concepts I used in My project
-•	Activities 
+•	**Activities** 
 -	Main Activity: the main Activity that holds the app logic within the single Activity method
 
-•	Fragments 
+•	**Fragments** 
 -	Login: first fragment and the one how responsible for holding the login function (not working as it should)
 -	Instruction: responsible for guide the user through the app
 -	About: responsible for displays information about your app
@@ -54,20 +54,22 @@ So, as I said this is not a real app but I will write some features that I belie
 -	Order: customize your order here
 -	Preview: edit, share and save an order
 
-•	UI Elements:
+•	**UI Elements**
 -	TextViews and Image Views to show the app
 -	Buttons, ImageButtons and ScrollView to control the app
 -	EditTexts and RadioGroups to take input 
 
-•	Data Handling: The app doesn’t contain any database. But it can handle the shutdown process. 
+•	**Data Handling** The app doesn’t contain any database. But it can handle the shutdown process. 
 
 ### The Main Libraries and Dependencies
--	Androidx : databinding, navigation(KTX), lifecycle, appcompat
+-	Androidx : databinding, navigation(KTX), lifecycle, appcompat.
 ## THE SHOE SHOP APP 📱
 >[!NOTE]
->The Screenshots of the app will be added soon
+>The Screenshots of the app will be added soon.
 
 
 ## Contribution
 This repo doesn’t have future purposes. But I’ll continue developing it just for learning purposes. So, if you want to contribute anything you find useful, Thank you in advance. 
+
+
 Mohammed Ali Samhouri
