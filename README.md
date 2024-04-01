@@ -1,4 +1,4 @@
-# [Negozio Shoe Store App] - Final Project for Developing Android Apps with Kotlin - Part 1
+# Negozio Shoe Store App
 
 This is the final project for the "Developing Android Apps with Kotlin - Part 1" course offered by [Android Kotlin Developer](https://www.udacity.com/course/android-kotlin-developer-nanodegree--nd940) from [Udacity](https://www.udacity.com/). It demonstrates the use of Kotlin for building an Android application.
 
