@@ -69,8 +69,11 @@ So, as I said this is not a real app but I will write some features that I belie
 
 ## Tasks
  -  [ ] Add the install/ build code info. 
- -	[ ] Add the screenshots for the app.
+ -	 [ ] Add the screenshots for the app.
  - 	[ ] Edit the contribute section.
+ - 	[ ] upgrade the project to use Jetpack compose
+ - 	[ ] upgrade the project to the last dependencies
+ - 	[ ] upgrade the project to try the Multi-platform 
 
 
 ## Contribution
